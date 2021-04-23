@@ -1,0 +1,20 @@
+appdirs @ file:///home/anupama/.cache/pypoetry/artifacts/13/9e/45/de9aff042cbd8e14716eb6a553c3eb75e8d313cc1738477a933a926d87/appdirs-1.4.4-py2.py3-none-any.whl
+astroid @ file:///home/anupama/.cache/pypoetry/artifacts/a8/00/45/436f215c932e44d6ba5561a995f895e71c7c357fc09bf531b31a599155/astroid-2.5.3-py3-none-any.whl
+autopep8 @ file:///home/anupama/.cache/pypoetry/artifacts/2c/19/ca/701638e948903e253f7e20d40ebf22504bad2326b24a509251637c8c53/autopep8-1.5.6-py2.py3-none-any.whl
+black @ file:///home/anupama/.cache/pypoetry/artifacts/7b/6c/d2/efd4b805b84f116ba160490326d5b62df63da44b88a84e2b1e9042ac7f/black-20.8b1.tar.gz
+click @ file:///home/anupama/.cache/pypoetry/artifacts/21/fd/0f/f7ff619e0ab099fc284ee2b24a86129d9dc3ad2a475dc304bbbbe20ecb/click-7.1.2-py2.py3-none-any.whl
+flake8 @ file:///home/anupama/.cache/pypoetry/artifacts/b8/54/22/c86908a17e023a917c963c0afe98570cf4b6f07c4407b85c6e3beb7128/flake8-3.9.1-py2.py3-none-any.whl
+isort @ file:///home/anupama/.cache/pypoetry/artifacts/4a/8a/f1/2452b522e9af8f9cbe31d431dd9470b726d862a92ae316f0e886479263/isort-5.8.0-py3-none-any.whl
+lazy-object-proxy @ file:///home/anupama/.cache/pypoetry/artifacts/0b/73/82/fb8e34b708a267abeba1c501dd96a9324e0d38841b1a04ef6451ee47bb/lazy_object_proxy-1.6.0-cp37-cp37m-manylinux1_x86_64.whl
+mccabe @ file:///home/anupama/.cache/pypoetry/artifacts/c2/cd/ed/3c4495a1422fb12eefbca8b3c6ccc83ab4ec92fd39df029199cc4f4ee4/mccabe-0.6.1-py2.py3-none-any.whl
+mypy @ file:///home/anupama/.cache/pypoetry/artifacts/fd/29/01/9d2813aa7cd8177b78e0b918c3add4852cf43323246c8d173309179443/mypy-0.812-cp37-cp37m-manylinux2010_x86_64.whl
+mypy-extensions @ file:///home/anupama/.cache/pypoetry/artifacts/41/fb/ef/133cd18a3e22a06b8d77dfe2ba71c50c509e4d2484ee619c6631c0b5b2/mypy_extensions-0.4.3-py2.py3-none-any.whl
+pathspec @ file:///home/anupama/.cache/pypoetry/artifacts/d3/5f/9e/9c6b0f740c5d2430d10e5d6f50db88d8ffaab034156351d3fb698bd3c5/pathspec-0.8.1-py2.py3-none-any.whl
+pycodestyle @ file:///home/anupama/.cache/pypoetry/artifacts/a5/4d/b8/38f79509a4c7ac2a12983ce715595e1f983965f0e4c03d632074c05eec/pycodestyle-2.7.0-py2.py3-none-any.whl
+pyflakes @ file:///home/anupama/.cache/pypoetry/artifacts/23/7e/52/ea1293b6028d8abc80bab40d1d20c22ae4fb0290b35f06541da7cab403/pyflakes-2.3.1-py2.py3-none-any.whl
+pylint @ file:///home/anupama/.cache/pypoetry/artifacts/55/8e/d7/637197cf166d1722117e803bf465f5547cd9c4b1ae9a07f2605c5684b7/pylint-2.7.4-py3-none-any.whl
+regex @ file:///home/anupama/.cache/pypoetry/artifacts/5b/86/c7/caf2fd4e0eace88a30e3b2109f1587ce13a19f81611406f179c9dd3754/regex-2021.4.4-cp37-cp37m-manylinux2014_x86_64.whl
+toml @ file:///home/anupama/.cache/pypoetry/artifacts/4f/28/bf/d86336a479a830a4e11505920e408af09c2f5c129c3b59500aa93387fb/toml-0.10.2-py2.py3-none-any.whl
+typed-ast @ file:///home/anupama/.cache/pypoetry/artifacts/fe/7c/53/86cd82215775e7707b6f7cafaeed6802f93f0856a8371b0e15bc85d3c6/typed_ast-1.4.3-cp37-cp37m-manylinux1_x86_64.whl
+typing-extensions @ file:///home/anupama/.cache/pypoetry/artifacts/5a/dd/8f/5dc09cb3732cb0be9ecae5854eaa6aa0d4cd95752163c65283ecf9bd34/typing_extensions-3.7.4.3-py3-none-any.whl
+wrapt==1.12.1

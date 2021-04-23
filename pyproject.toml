@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "search-engine"
+version = "0.1.0"
+description = "search engine made my self"
+authors = ["Anupama Dissanayake <61502343+Anu2001dev@users.noreply.github.com >"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+autopep8 = "^1.5.6"
+flake8 = "^3.9.1"
+black = "^20.8b1"
+mypy = "^0.812"
+pylint = "^2.7.4"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
