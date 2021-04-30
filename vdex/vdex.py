@@ -1,8 +1,30 @@
-import asyncio
-import webbrowser
+import sys
 
 import aiohttp
 from bs4 import BeautifulSoup, Tag
+
+if sys.platform == "linux":
+    import subprocess
+
+    def say(text: str):
+        cmd = f"nanotts-git -i -v en-US --speed 0.8 --pitch 1.4 -w -p ".split()
+        cmd.insert(2, text)
+        subprocess.call(
+            cmd,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+        )
+
+
+else:
+    import pyttsx3
+
+    engine = pyttsx3.init()
+    engine.setProperty("rate", 125)
+
+    def say(text: str):
+        engine.say(text)
+        engine.runAndWait()
 
 
 async def get_data(query: str) -> str:
@@ -25,12 +47,16 @@ async def get_data(query: str) -> str:
 async def main():
     """The main function of the package that puts everything together"""
     query = input("What do you want to search today? ")
+    # query = "google"
     data = await get_data(query)
     soup = BeautifulSoup(data, "lxml")
-    result: Tag = soup.select_one(".kno-rdesc > span:nth-child(2)") or soup.select_one(
-        ".g > div > div > div:nth-child(2) > span > span:last-child"
+    result: Tag = (
+        soup.select_one(
+            ".c2xzTb > div:nth-child(1) > div:nth-child(1) > \
+        div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)"
+        )
+        or soup.select_one(".kno-rdesc > span:nth-child(2)")
+        or soup.select_one(".g > div > div > div:nth-child(2) > span > span:last-child")
     )
-    print(result.text)
 
-
-# /html/body/div[7]/div/div[9]/div[1]/div/div[2]/div[2]/div/div/div[4]/div[1]/div/div/div[2]/span/span
+    say(result.text)
