@@ -1,6 +1,6 @@
 import sys
 
-import aiohttp
+import requests
 from bs4 import BeautifulSoup, Tag
 
 if sys.platform == "linux":
@@ -40,22 +40,9 @@ headers = {
 }
 
 
-async def get_data(query: str) -> str:
-    """get data required for processing"""
-
-    async with aiohttp.ClientSession(headers=headers) as session:
-        async with session.get(f"https://google.com/search?q={query}") as resp:
-            return await resp.text()
-
-
 def process_data(data):
     soup = BeautifulSoup(data, "lxml")
     answer_selectors = [
-        # ".xpdopen > div:first-child > div:first-child > div:first-child > div:first-child > div:first-child"
-        # ".Z0LcW .XcVN5d .AZCkJd"
-        # ".c2xzTb > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)"
-        # ".c2xzTb > div:nth-child(1) > div:nth-child(1) > \
-        # div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)",
         ".Z0LcW",
         "div.wDYxhc:nth-child(2) > div:nth-child(1) > div:nth-child(1)",
         ".kno-rdesc > span:nth-child(2)",
@@ -67,16 +54,14 @@ def process_data(data):
             return answer.text
 
 
-async def main():
+def main():
     """The main function of the package that puts everything together"""
 
-    # query = "explosive negative pushups"
-    # if "query" not in globals():
     query = input("What do you want to search today? ")
-    data = await get_data(query)
+    data = requests.get(f"https://google.com/search?q={query}", headers=headers).text
     answer = process_data(data)
     print(answer)
-    if answer.endswith("..."):
+    if answer.endswith("..."):  # removes the last sentense if it's incompleted
         answer = ". ".join(answer.split(". ")[:-1])
 
     say(answer)

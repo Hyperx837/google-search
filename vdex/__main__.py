@@ -23,5 +23,5 @@ if __name__ == "__main__":
 
     from vdex.vdex import main
 
-    # while True:
-    asyncio.run(main())
+    while True:
+        asyncio.run(main())
